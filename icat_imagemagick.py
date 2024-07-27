@@ -23,16 +23,6 @@ def resize_image(image_path, output_path, width, height):
     command = ['magick', image_path, '-resize', f'{width}x{height}!', output_path]
     subprocess.run(command, check=True)
 
-# def render_image(image_path, cell_width, cell_height, x, y):
-#    command = ['kitty', 'icat', '--place',
-#               f'{cell_width}x{cell_height}@{x}x{y}', '--align', 'left', image_path]
-#    subprocess.run(command, check=True)
-
-# def render_image(image_path, cell_width, cell_height, x, y):
-#     command = ['kitty', '+kitten', 'icat', '--place',
-#                f'{cell_width}x{cell_height}@{x}x{y}', '--align', 'left', image_path]
-#     subprocess.run(command, check=True)
-
 def render_image(image_path, term_cols, term_rows, x, y):
     command = [
         'kitty',

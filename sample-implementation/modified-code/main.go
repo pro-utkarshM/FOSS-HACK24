@@ -75,14 +75,28 @@ func handleWindowSizeChange() {
 		fmt.Println("Error handling window size change:", err)
 	}
 }
+//
+// Checks if a given file is an image 
+func isImage(fileName string) bool {
+	extensions := []string{".jpg", ".jpeg", ".png", ".gif", ".bmp"}
+	ext := strings.ToLower(filepath.Ext(fileName))
+	for _, e := range extensions {
+		if ext == e {
+			return true
+		}
+	}
+	return false
+}
 
+// findImages recursively searches for image files in the given directory
 func discoverImages(dir string) ([]string, error) {
 	var images []string
+
 	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-		if !info.IsDir() && strings.HasSuffix(strings.ToLower(info.Name()), ".png") {
+		if !info.IsDir() && isImage(info.Name()) {
 			images = append(images, path)
 		}
 		return nil
@@ -92,6 +106,8 @@ func discoverImages(dir string) ([]string, error) {
 	}
 	return images, nil
 }
+
+//
 
 func resizeImage(img image.Image, width, height uint) image.Image {
 	return resize.Resize(width, height, img, resize.Lanczos3)

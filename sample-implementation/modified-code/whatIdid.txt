@@ -1,0 +1,8 @@
+The error encountered (panic: runtime error: integer divide by zero) occurs because the xParam and yParam values in the gridConfig struct are zero, leading to division by zero when calculating imgWidth and imgHeight.
+
+We need to set appropriate values for xParam and yParam before rendering the image grid. These values determine the number of columns and rows for the grid layout.
+
+The error with filepath.Walk suggests a mismatch between the expected types.
+- func(path string, info os.DirEntry, err error) error
++ func(path string, info os.FileInfo, err error) error
+

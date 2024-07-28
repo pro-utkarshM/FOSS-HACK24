@@ -1,0 +1,30 @@
+[210 12:43:06.992903] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+[210 12:43:30.707264] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:30.707320] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:30.717249] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:31.501223] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:31.501258] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:31.509161] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:32.489579] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:32.489614] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:32.496674] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:33.594518] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:33.594554] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:33.601911] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:34.172429] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:34.172464] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:34.178223] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:35.059264] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:35.059303] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:35.065608] [PARSE ERROR] Unknown char after ESC: 0x5c
+[210 12:43:35.329359] [PARSE ERROR] OTH sequence too long, truncating.
+[210 12:43:35.329393] [PARSE ERROR] Failed to parse GraphicsCommand command payload with error: payload size (8170) too
+large
+[210 12:43:35.335876] [PARSE ERROR] Unknown char after ESC: 0x5c
+
